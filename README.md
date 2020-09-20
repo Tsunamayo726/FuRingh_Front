@@ -5,7 +5,7 @@
 yarn build
 ```
 
-- 上からビルド
+- 上からビルドする
 ```
 git submodule foreach yarn build
 ```
