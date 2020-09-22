@@ -80,7 +80,7 @@ li{
 /*config*/
 textarea{
   resize:none;
-  height:40px;
+  height:80px;
   width:350px;
 }
 body{
@@ -98,9 +98,6 @@ body{
   background-color: white;
   border:solid 2px #ddd;
 }
-.icon-image{
-  text-align: center;
-}
 .con-icon{
   text-align: center;
   margin:20px;
@@ -113,6 +110,7 @@ body{
   display:none;
 }
 .btn-icon{
+  cursor: pointer;
   padding:4px 10px;
   display:inline-block;
   margin:5px 0 10px 0;
@@ -139,6 +137,9 @@ body{
   background-color:#EEEEEE;
   border-bottom:solid 3px  #999999;
 }
+input[type="text"]:focus{
+  border-bottom:solid 3px #0099FF;
+}
 .explain textarea{
   font-family:"Hiragino Kaku Gothic ProN W3", sans-serif;
   font-size:15px;
@@ -149,4 +150,13 @@ body{
   border-top:none;
   outline: none;
   background-color:#EEEEEE;
+}
+.explain textarea:focus{
+  border-bottom:solid 3px #0099FF;
+}
+.button2{
+  text-align: center;
+}
+.submit-btn{
+  display: none;
 }
