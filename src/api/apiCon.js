@@ -21,4 +21,22 @@ export default class apiCon {
             .then(data => resolve(data));
         });
     }
+
+    async post(user_id,comment) { 
+        const path = "/api/v1/post/post";
+        const obj = {
+            "user_id":user_id,
+            "comment":comment
+        };
+        const method = "POST";
+        const headers = {
+        'Content-Type': 'application/json',
+        };
+        fetch(this.URL + path, {
+            method:method, 
+            headers:headers,
+            body:JSON.stringify(obj)
+        })
+        .catch(console.error);
+    }
 }
