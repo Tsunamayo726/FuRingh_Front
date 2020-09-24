@@ -3,17 +3,19 @@ import PostComponent from "./PostComponent";
 import "./TimeLine.css"
 
 export default class TimeLine extends React.Component {
+  constructor(props) {
+    super(props)
+    console.log("Timeline")
+  }
+
   render() {
-    return (
-      <div className="timeline">
-        <h1>Timeline</h1>
-<PostComponent
-  username="sagi"
-  text="TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT,
+    return (<div className="timeline">
+      <PostComponent
+        username="sagi"
+        text="TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT,
 TEXTTEXTTEXTTEXTTEXTTEXT,
 TEXTTEXTTEXTTEXT."
 />
-      </div>
-    );
+    </div>);
   }
 }

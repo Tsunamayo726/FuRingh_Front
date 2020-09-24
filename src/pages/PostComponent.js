@@ -17,7 +17,7 @@ export default class PostComponent extends React.Component {
     return (
       <div className="PostComponent">
         <div className="upper">
-          <img src={icon} className="icon"/>
+          <img src={icon} className="icon" alt={this.state.username + "'s icon"} />
           <div className="username">{this.state.username}</div>
         </div>
         <div className="downer">

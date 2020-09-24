@@ -1,8 +1,4 @@
-* {
-}
-
 .PostComponent {
-  text-align: start;
   border: solid 1px black;
   width: 500px;
 }
