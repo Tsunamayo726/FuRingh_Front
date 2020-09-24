@@ -22,7 +22,7 @@ export default class apiCon {
         });
     }
 
-    async post(user_id,comment) { 
+    post(user_id,comment) { 
         const path = "/api/v1/post/post";
         const obj = {
             "user_id":user_id,
@@ -39,4 +39,24 @@ export default class apiCon {
         })
         .catch(console.error);
     }
+
+    reply(user_id,post_id,comment) {
+        const path = "/api/v1/post/reply";
+        const obj = {
+            "user_id":user_id,
+            "post_id":post_id,
+            "comment":comment,
+        };
+        const method = "POST";
+        const headers = {
+            "COntent-Type":"application/json",
+        };
+        fetch(this.URL + path,{
+            method:method,
+            headers:headers,
+            body:JSON.stringify(obj)
+        })
+        .catch(console.error);
+    }
 }
+
