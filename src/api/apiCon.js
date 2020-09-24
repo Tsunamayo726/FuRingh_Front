@@ -11,4 +11,14 @@ export default class apiCon {
             .catch(e=>console.log(e));
         });
     }
+
+    async get_reply(post_id){
+        return new Promise((resolve,reject)=>{
+            const query = "?post_id="+post_id;
+            const path  = "/api/v1/post/get_reply";
+            fetch(this.URL + path + query)
+            .then(response => response.json())
+            .then(data => resolve(data));
+        });
+    }
 }
