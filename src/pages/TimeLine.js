@@ -11,11 +11,13 @@ export default class TimeLine extends React.Component {
   render() {
     return (<div className="timeline">
       <PostComponent
-        username="sagi"
-        text="TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT,
-TEXTTEXTTEXTTEXTTEXTTEXT,
-TEXTTEXTTEXTTEXT."
-/>
+        username="@sorana_toki_334"
+        icon="Icon"
+        itemname="あたしンちグラグラゲーム"
+        quantity="1"
+        price="1103354300000000"
+        comment="少し傷んでいますが品質に問題はありません"
+      />
     </div>);
   }
 }
