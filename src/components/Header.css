@@ -1,0 +1,9 @@
+.Header  {
+  font-size: 2rem;
+  display: flex;
+  margin: 10px;
+}
+
+.Header .right {
+  margin-right: 0;
+}

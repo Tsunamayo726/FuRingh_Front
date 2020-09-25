@@ -10,7 +10,7 @@ export default class LoginRegister extends React.Component {
     this.username_change = this.username_change.bind(this);
     this.password_change = this.password_change.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    if (this.props.feature == "login") {
+    if (this.props.feature === "login") {
       this.name = "Login"
     } else {
       this.name = "Register"
@@ -21,7 +21,7 @@ export default class LoginRegister extends React.Component {
   // 送信
   handleSubmit(e) {
     e.preventDefault();
-    if (this.props.feature == "login") {
+    if (this.props.feature === "login") {
       var url = '/api/v1/user/login';
     } else {
       var url = '/api/v1/user/register'

@@ -1,0 +1,26 @@
+.PostComponent {
+  border: solid 1px black;
+  width: 500px;
+}
+
+.PostComponent .upper {
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.PostComponent .upper .icon {
+  width: 50px;
+  border-radius: 25px;
+}
+
+.PostComponent .upper .username {
+}
+
+.PostComponent .downer {
+  padding-left: 1rem;
+}
+
+.PostComponent .downer .text {
+  white-space: pre-wrap;
+}

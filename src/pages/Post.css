@@ -1,0 +1,11 @@
+.Post {
+  width: 30%;
+}
+
+input.AddButton {
+  width: 100%;
+}
+
+textarea.textarea {
+  width: 100%;
+}
