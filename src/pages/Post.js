@@ -19,11 +19,11 @@ export default class Post extends Component {
                 <th>品目</th>
                 <th><input required type="text" name="itemname" /></th>
               </tr>
-              <tr className="row">
+              <tr className="quantity">
                 <th>数量</th>
                 <th><input required type="number" min="1" name="quantity" /></th>
               </tr>
-              <tr className="row">
+              <tr className="price">
                 <th>価格</th>
                 <th><input required type="number" min="1" name="price" /></th>
               </tr>

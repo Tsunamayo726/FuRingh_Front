@@ -4,13 +4,20 @@ import "./PostComponent.css"
 
 export default class PostComponent extends React.Component {
   constructor(props) {
+    /*
+    {
+      username: "ユーザー名",
+      icon: "Icon", // feature
+      itemname: "品目",
+      quantity: "数量",
+      price: "価格"
+    }
+    */
     super(props)
+    console.log(props)
     let user = props.username
     user[0]==="@"||(user="@"+user)
-    this.state = {
-      username: user,
-      text: props.text,
-    }
+    this.state = props
   }
 
   render() {
@@ -22,7 +29,26 @@ export default class PostComponent extends React.Component {
         </div>
         <div className="downer">
           <div className="text">
-            {this.state.text}
+            <table>
+              <tr>
+                <th>品目：</th>
+                <td>{this.state.itemname}</td>
+              </tr>
+              <tr>
+                <th>数量：</th>
+                <td>{this.state.quantity}</td>
+              </tr>
+              <tr>
+                <th>価格：</th>
+                <td>{this.state.price} 円</td>
+              </tr>
+              <tr>
+                <th>コメント：</th>
+              </tr>
+              <tr>
+                <td colspan="2">{this.state.comment}</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
