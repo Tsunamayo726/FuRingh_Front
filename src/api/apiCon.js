@@ -1,4 +1,4 @@
-export default class apiCon {
+class apiCon {
     constructor(URL){
         this.URL = URL;
     }
@@ -22,12 +22,16 @@ export default class apiCon {
         });
     }
 
-    post(user_id,comment) { 
+    post(user_id,comment,item) { 
         const path = "/api/v1/post/post";
         const obj = {
             "user_id":user_id,
-            "comment":comment
+            "comment":comment,
+            "item_name":item.name,
+            "item_price":item.price,
+            "item_quantity":item.quantity,
         };
+        
         const method = "POST";
         const headers = {
         'Content-Type': 'application/json',
@@ -49,7 +53,7 @@ export default class apiCon {
         };
         const method = "POST";
         const headers = {
-            "COntent-Type":"application/json",
+            "Content-Type":"application/json",
         };
         fetch(this.URL + path,{
             method:method,
@@ -58,5 +62,17 @@ export default class apiCon {
         })
         .catch(console.error);
     }
+
+    async get_user_info(user_id){
+        return new Promise((resolve,reject)=>{
+            const path = "/api/v1/user/getinfo";
+            const query = "?user_id="+user_id;
+            fetch(this.URL + path+query)
+            .then(response=>response.json())
+            .then(data=>resolve(data))
+            .catch(console.error);
+        });
+    }
 }
 
+export default new apiCon("http://localhost:8000");
