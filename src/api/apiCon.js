@@ -49,7 +49,7 @@ class apiCon {
         };
         const method = "POST";
         const headers = {
-            "COntent-Type":"application/json",
+            "Content-Type":"application/json",
         };
         fetch(this.URL + path,{
             method:method,
@@ -57,6 +57,17 @@ class apiCon {
             body:JSON.stringify(obj)
         })
         .catch(console.error);
+    }
+
+    async get_user_info(user_id){
+        return new Promise((resolve,reject)=>{
+            const path = "/api/v1/user/getinfo";
+            const query = "?user_id="+user_id;
+            fetch(this.URL + path+query)
+            .then(response=>response.json())
+            .then(data=>resolve(data))
+            .catch(console.error);
+        });
     }
 }
 
