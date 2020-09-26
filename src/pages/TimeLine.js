@@ -14,26 +14,35 @@ export default class TimeLine extends React.Component {
   }
 
 
-  componentDidMount(){
+   componentDidMount(){
     api.get_timeline().then((result)=>{
-      console.log(result);
+      const post_list =  result.map(async (post) => {
 
-      const component = <h1>hello world</h1>
+        const user = await api.get_user_info(post.user_id);
+        post.name = user[0].name;
+        
+        return  result;
 
-      this.setState({
-        post_list:result,
       });
+
+      Promise.all(post_list).then(result=>{
+        console.log(result);
+        this.setState({
+          post_list:result[0],
+        });
+      })
+
     });
   }
 
   render() {
+    console.log(this.state.post_list);
     return (
     <div className="timeline">
       <ul>
         <For of={this.state.post_list}>{item => 
-          <div>
-            <PostComponent comment={item.text} />
-          </div>
+            <PostComponent comment={item.text} username={item.name}  itemname={item.itam_name}
+             price={item.item_price} quantity={item.item_quantity}/>
         }</For>
       </ul> 
     </div>);
