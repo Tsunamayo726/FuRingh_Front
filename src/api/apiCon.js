@@ -1,4 +1,4 @@
-export default class apiCon {
+class apiCon {
     constructor(URL){
         this.URL = URL;
     }
@@ -60,3 +60,4 @@ export default class apiCon {
     }
 }
 
+export default new apiCon("http://localhost:8000");
