@@ -41,7 +41,7 @@ export default class TimeLine extends React.Component {
     <div className="timeline">
       <ul>
         <For of={this.state.post_list}>{item => 
-            <PostComponent comment={item.text} username={item.name}  itemname={item.itam_name}
+            <PostComponent comment={item.text} username={item.name}  itemname={item.item_name}
              price={item.item_price} quantity={item.item_quantity}/>
         }</For>
       </ul> 
