@@ -50,6 +50,7 @@ export default class LoginRegister extends React.Component {
       <div className="form">
         <form onSubmit={this.handleSubmit}>
           <input
+            autoFocus={true}
             type="text"
             placeholder="Username"
             name="username"
