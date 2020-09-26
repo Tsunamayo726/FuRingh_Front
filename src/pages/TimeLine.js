@@ -9,7 +9,7 @@ export default class TimeLine extends React.Component {
     super(props)
     console.log("Timeline")
     this.state = {
-      post_list:[1,2,3],
+      post_list:null,
     }
   }
 
@@ -32,7 +32,7 @@ export default class TimeLine extends React.Component {
       <ul>
         <For of={this.state.post_list}>{item => 
           <div>
-            <li>{item.text}</li>
+            <PostComponent comment={item.text} />
           </div>
         }</For>
       </ul> 
