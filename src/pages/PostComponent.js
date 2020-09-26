@@ -5,6 +5,7 @@ import "./PostComponent.css"
 export default class PostComponent extends React.Component {
   constructor(props) {
     /*
+    props
     {
       username: "ユーザー名",
       icon: "Icon", // feature
@@ -14,9 +15,6 @@ export default class PostComponent extends React.Component {
     }
     */
     super(props)
-    console.log(props)
-    let user = props.username
-    user[0]==="@"||(user="@"+user)
     this.state = props
   }
 
