@@ -1,4 +1,4 @@
-export default class apiCon {
+class apiCon {
     constructor(URL){
         this.URL = URL;
     }
@@ -58,21 +58,12 @@ export default class apiCon {
         })
         .catch(console.error);
     }
+
     async get_user_info(user_id){
         return new Promise((resolve,reject)=>{
-            const path = "/api/v1/post/getinfo";
-            const obj = {
-                "user_id":user_id,
-            };
-            const method = "POST";
-            const headers = {
-                "Content-Type":"application/json",
-            };
-            fetch(this.URL + path,{
-                method:method,
-                headers:headers,
-                body:JSON.stringify(obj)
-            })
+            const path = "/api/v1/user/getinfo";
+            const query = "?user_id="+user_id;
+            fetch(this.URL + path+query)
             .then(response=>response.json())
             .then(data=>resolve(data))
             .catch(console.error);
@@ -80,3 +71,4 @@ export default class apiCon {
     }
 }
 
+export default new apiCon("http://localhost:8000");
