@@ -22,12 +22,16 @@ class apiCon {
         });
     }
 
-    post(user_id,comment) { 
+    post(user_id,comment,item) { 
         const path = "/api/v1/post/post";
         const obj = {
             "user_id":user_id,
-            "comment":comment
+            "comment":comment,
+            "item_name":item.name,
+            "item_price":item.price,
+            "item_quantity":item.quantity,
         };
+        
         const method = "POST";
         const headers = {
         'Content-Type': 'application/json',
