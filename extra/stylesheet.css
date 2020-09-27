@@ -160,3 +160,22 @@ input[type="text"]:focus{
 .submit-btn{
   display: none;
 }
+
+/*profile*/
+.profile{
+  background-color: white;
+  height:1000px;
+  width:1000px;
+  margin:100px auto;
+}
+.profile-name,.profile-explain,.profile-url,.profile-url,.profile-op-hours,.profile-phone{
+  margin:20px;
+  border-bottom:solid 2px #ddd;
+  text-align:center;
+}
+.profile-name,.profile-explain,.profile-url,.profile-url,.profile-op-hours,.profile-phone h2,p{
+  text-align: left;
+}
+.profile-icon{
+  margin:20px 20px;
+}

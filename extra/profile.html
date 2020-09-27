@@ -2,52 +2,56 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>FooRingh-config</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <title>FuRingh-profile</title>
+        <link rel="stylesheet" href="./stylesheet.css">
     </head>
     <body>
-    <!-- ここからHTMLを書き始める -->
-        <div class="header">
-            <div class="header-icon">
-                <p>FuRingh</p>
-            </div>
-            <div class="header-list">
-                <li href="timeline.html">タイムライン</li>
-                <li>お店一覧</li>
-                <li>@username</li>
-                <li>設定</li>
-                <li>ログアウト</li>  
+        <header>
+            <a href="/" class="logo"><img src="logo.png" href="/" alt="logo"></a>
+            <nav class="header-list">
+                <ul class="nav">
+                    <li><a href="#">タイムライン</a></li>
+                    <li><a href="#">お店一覧</a></li>
+                    <li><a href="profile.html">@UserName</a></li>
+                    <li><a href="#">ログアウト</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+            <div class="profile">
+                <div class="icon">
+                    <img src="store-template.png" id="icon" class="profile-icon">
+                </div>
+                <div class="profile-name">
+                    <h2 id="name">居酒屋田中</h2>
+                </div>
+                <div class="profile-explain">
+                    <div class="profile-title">
+                        <p>店舗説明</p>
+                    </div>
+                    <p id="explain">海鮮居酒屋田中です</p>
+                </div>
+                <div class="profile-url">
+                    <div class="profile-title">
+                        <p>URL</p>
+                    </div>
+                    <p id="url" href="#">https://www.exampleurl</p>
+                </div>
+                <div class="profile-op-hours">
+                    <div class="profile-title">
+                        <p>営業時間</p>
+                    </div>
+                    <p id="op-hours">17:00~22:00</p>
+                </div>
+                <div class="profile-phone">
+                    <div class="profile-title">
+                        <p>電話番号</p>
+                    </div>
+                    <p id="phone">090-0000-0000</p>
+                </div>
             </div>
         </div>
-        <div class="config">
-            <p>店舗説明</p>
-            <div class="icon">
-                アイコン<br>
-                <input type="file" name="icon">
-            </div>
-            <div class="name">
-                <p>名前</p>
-                <textarea name="name">名前を入力してください</textarea>
-            </div>
-            <div class="explain">
-                <p>お店の説明</p>
-                <textarea name="explain">説明を入力して下さい</textarea>
-            </div>
-            <div class="url">
-                <p>URL</p>
-                <textarea name="url">ホームページのURLを入力してください</textarea>
-            </div>
-            <div class="op-hours">
-                <p>営業時間</p>
-                <textarea name="op-hours">営業時間を入力してください</textarea>
-            </div>
-            <div class="phone">
-                <p>電話番号</p>
-                <textarea name="phone">電話番号を入力してください</textarea>
-            </div>
-            <div class="button2">
-                <input type="button" value="変更する" id="button2">
-            </div>
-        </div>
+    <script>
+    </script>
     </body>
 </html>
