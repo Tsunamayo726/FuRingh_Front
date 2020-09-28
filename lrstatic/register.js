@@ -5,7 +5,7 @@ window.onload=()=>{
       password: e.target.password.value
     }
     console.log(data)
-    fetch('/api/v1/user/login', {
+    fetch('/api/v1/user/register', {
       method: "POST",
       mode: 'cors',
       headers: {
@@ -16,7 +16,7 @@ window.onload=()=>{
       .then(response => response.json())
       .then(data => {
         console.log(data)
-        document.querySelector("div.status").innerText = "OK"
+        document.querySelector("div.status").innerText = "Registered, Please Login."
       });
     return false
   }
