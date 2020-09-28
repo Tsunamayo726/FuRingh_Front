@@ -166,7 +166,7 @@ input[type="text"]:focus{
   background-color: white;
   height:1000px;
   width:1000px;
-  margin:100px auto;
+  margin:75px auto;
 }
 .profile-name,.profile-explain,.profile-url,.profile-url,.profile-op-hours,.profile-phone{
   margin:20px;
@@ -178,4 +178,7 @@ input[type="text"]:focus{
 }
 .profile-icon{
   margin:20px 20px;
+}
+.profile-title p{
+  font-size: 20px;
 }
