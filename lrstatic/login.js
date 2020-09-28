@@ -16,7 +16,8 @@ window.onload=()=>{
       .then(response => response.json())
       .then(data => {
         console.log(data)
-        document.querySelector("div.status").innerText = "OK"
+        document.querySelector("div.status").innerText = "OK..."
+        window.location.pathname = "/"
       });
     return false
   }
