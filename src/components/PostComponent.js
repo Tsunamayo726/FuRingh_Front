@@ -84,8 +84,8 @@ export default class PostComponent extends React.Component {
           </table>
           <div className={this.state.replyBoxClassName}>
             <form onSubmit={(e) => {
-                const userid = "xydcftjyvgkuhblnijkoulgiykufjyc"
-                const postid = "UILGYFKTUGVJHLBKNJUIGHYL"
+                const userid = "1"
+                const postid = "1"
                 const data = {
                   user_id: userid,
                   post_id: postid,
