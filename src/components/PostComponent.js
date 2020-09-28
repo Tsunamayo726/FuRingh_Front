@@ -18,7 +18,7 @@ export default class PostComponent extends React.Component {
     super(props)
     this.state = {
       username: props.username,
-      icon: props.icon,
+      icon: props.icon, // アイコン画像のURL
       itemname: props.itemname,
       quantity: props.quantity,
       price: props.price,
@@ -31,7 +31,7 @@ export default class PostComponent extends React.Component {
   render() {
     return (<div className="PostComponent">
       <div className="upper">
-        <img src={icon} className="icon" alt={this.state.username + "'s icon"}/>
+        <img src={this.state.icon} className="icon" alt={this.state.username + "'s icon"}/>
         <div className="username">{this.state.username}</div>
       </div>
       <div className="downer">
