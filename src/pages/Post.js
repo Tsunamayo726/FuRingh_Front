@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./Post.css"
-
+import api from "../api/apiCon";
 export default class Post extends Component {
   submit(e) {
     console.log("Submit form")
-    console.log(e.target.itemname.value);
-    console.log(e.target.quantity.value);
-    console.log(e.target.price.value);
-    // console.log(e.target.textarea.value);
-
+    const item ={
+      name:  e.target.itemname.value,
+      quantity: e.target.quantity.value,
+      price:  e.target.price.value,
+    }
+    const comment = e.target.post_textarea.value
+    api.post(1,comment,item);
     return false
   }
 
@@ -35,7 +37,7 @@ export default class Post extends Component {
               </tr>
             </tbody>
           </table>
-          <textarea required className="textarea"  placeholder="コメント"></textarea>
+          <textarea required className="textarea" name="post_textarea" placeholder="コメント"></textarea>
           <br/>
           <input type="submit" value="投稿" />
         </form>
