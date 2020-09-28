@@ -10,12 +10,6 @@ import LoginRegister from "./pages/LoginRegister"
 import Post from "./pages/Post"
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-
-    }
-  }
   render(){
     return (
       <Router>
