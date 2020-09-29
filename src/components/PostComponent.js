@@ -1,7 +1,7 @@
 import React from "react";
 import "./PostComponent.css"
 import api from "../api/apiCon";
-import For from "react-loops";
+import {For} from "react-loops";
 
 export default class PostComponent extends React.Component {
   constructor(props) {
@@ -27,6 +27,7 @@ export default class PostComponent extends React.Component {
       replyBoxClassName: "replyBox",
       replyStatus: "",
       post_id:props.post_id,
+      reply_list:null,
     }
   }
 
@@ -39,7 +40,24 @@ export default class PostComponent extends React.Component {
     )
   }
 
+  componentDidMount(){
+
+    api.get_reply(this.state.post_id).then(result=>{
+      const reply_list =  result.map(async (reply) => {
+        const user = await api.get_user_info(reply.user_id);
+        reply.name = user[0].name;
+        return  reply;
+      });
+
+      Promise.all(reply_list).then(result=>{
+        this.setState({
+          reply_list:result,
+        });
+      })
+    });
+  }
   render() {
+    console.log(this.state.reply_list);
     return (<div className="PostComponent">
       <div className="upper">
         <img src={this.state.icon} className="icon" alt={this.state.username + "'s icon"}/>
@@ -115,13 +133,15 @@ export default class PostComponent extends React.Component {
             </form>
             <div className="replyStatus">{this.state.replyStatus}</div>
           </div>
+
           <div className="replyList">
-
-            <this.replyComponent
-              username="tmcitproken"
-              comment="COMMENT"
-            />
-
+            <For of={this.state.reply_list}>{item =>
+              <this.replyComponent
+              username={item.name}
+              comment={item.text}
+             />
+            }
+           </For> 
           </div>
         </div>
       </div>
