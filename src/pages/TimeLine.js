@@ -26,7 +26,7 @@ export default class TimeLine extends React.Component {
       });
 
       Promise.all(post_list).then(result=>{
-        console.log(result);
+        // console.log(result);
         this.setState({
           post_list:result[0],
         });
@@ -36,7 +36,7 @@ export default class TimeLine extends React.Component {
   }
 
   render() {
-    console.log(this.state.post_list);
+    // console.log(this.state.post_list);
     return (
       <div className="timeline">
       {/*
