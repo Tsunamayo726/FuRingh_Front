@@ -49,7 +49,7 @@ li{
   width: 100px;
 }
 /*footer*/
-footer h1,h2,a{
+.footer h1,h2,a{
   color:white;
 }
 .footer {
@@ -244,4 +244,55 @@ h3{
 }
 .profile-title p{
   font-size: 20px;
+}
+
+/*Login*/
+.login-title{
+  padding-top:15px;
+  padding-bottom:25px;
+  font-size:25px;
+}
+.login-title p{
+  text-align:center;
+}
+.login-main{
+  background-color:white;
+  height:350px;
+  width:500px;
+  margin:100px auto;
+}
+.login-form{
+  text-align: center;
+  margin:0 auto;
+}
+.login-form input{
+  margin:20px auto;
+  height:35px;
+  width:400px;
+  border:solid 2px #A9A9A9;
+}
+.login-submit{
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 13pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 5px 5px;    /* 余白       */
+  background    : #e88017;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 0.8;         /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+}
+.login-submit:hover {
+  opacity:1;           /* カーソル時透明度 */
+  }
+.register a{
+  color:#0099FF;
+  text-decoration:none;
+  border:none;
+}
+.register a:hover{
+  color:#0099FF;
+  border-bottom:solid 2px #0099FF;
 }

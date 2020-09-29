@@ -4,34 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login</title>
+  <title>ログイン | FuRingh</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../extra/stylesheet.css">
   <script src="login.js" charset="utf-8"></script>
 </head>
 <body>
-  <div>
-    <h1>Login</h1>
-    <div class="form">
-      <form>
-        <input
-          type="text"
-          placeholder="Username"
-          name="username"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          name="password"
-        />
-        <br/>
-        <input type="submit" value="Login"/>
-      </form>
+  <header>
+    <a href="/" class="logo"><img src="../extra/logo.png" href="/" alt="logo"></a>
+    <nav class="header-list">
+        <ul class="nav">
+            <li><a href="#">タイムライン</a></li>
+            <li><a href="#">お店一覧</a></li>
+            <li><a href="../extra/profile.html">@UserName</a></li>
+            <li><a href="#">ログアウト</a></li>
+        </ul>
+    </nav>
+  </header>
+  <div class="login-main">
+    <div class="login-title">
+      <p>ログイン</p>
     </div>
-    <div>
-      <a href="register.html">Register</a>
+    <div class="login-form">
+        <input type="text" placeholder="メールアドレス" name="username"　class="login-form">
+        <br>
+        <input type="password" placeholder="パスワード" name="password">
+        <br>
+        <input type="submit" value="ログイン" class="login-submit">
+        <div class="register">
+          <a href="register.html">新規登録の方はこちら</a>
+        </div>
     </div>
     <div class="status"></div>
   </div>
+  <footer>
+    <div class="footer">
+        <div class="footer-left">
+            <h1>FuRingh</h1>
+            <h2>©2020 noplannoideanosense</h2>
+        </div>
+        <div class="footer-right">
+            <div class="footer-system">
+                <div class="footer-system-top">
+                    <a href="#">タイムライン</a>
+                    <a href="#">お店一覧</a><br>	
+                </div>
+                <div class="footer-system-under">
+                    <a href="#">ログイン</a>
+                    <a href="#">新規登録</a>	
+                </div>
+            </div>
+            <div class="footer-list">
+                <a href="#">利用規約</a>
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
 </body>
 </html>
