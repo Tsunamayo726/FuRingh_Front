@@ -1,5 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+
 import api from "../api/apiCon";
 export default class Layout extends React.Component {
   render() {
@@ -7,6 +9,7 @@ export default class Layout extends React.Component {
       <div>
         <Header />
         {this.props.children}
+        <Footer />
       </div>
     );
   }
