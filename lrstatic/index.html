@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ログイン | FuRingh</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../extra/stylesheet.css">
+  <link rel="stylesheet" href="login.css">
   <script src="login.js" charset="utf-8"></script>
 </head>
 <body>
   <header>
-    <a href="/" class="logo"><img src="../extra/logo.png" href="/" alt="logo"></a>
+    <a href="/" class="logo"><img src="logo.png" href="/" alt="logo"></a>
     <nav class="header-list">
         <ul class="nav">
             <li><a href="#">タイムライン</a></li>
             <li><a href="#">お店一覧</a></li>
-            <li><a href="../extra/profile.html">@UserName</a></li>
+            <li><a href="profile.html">@UserName</a></li>
             <li><a href="#">ログアウト</a></li>
         </ul>
     </nav>
@@ -26,14 +26,18 @@
       <p>ログイン</p>
     </div>
     <div class="login-form">
+      <form>
+        <p>メールアドレスを入力</p>
         <input type="text" placeholder="メールアドレス" name="username"　class="login-form">
         <br>
+        <p>パスワードを入力</p>
         <input type="password" placeholder="パスワード" name="password">
         <br>
         <input type="submit" value="ログイン" class="login-submit">
         <div class="register">
           <a href="register.html">新規登録の方はこちら</a>
         </div>
+      </form>
     </div>
     <div class="status"></div>
   </div>

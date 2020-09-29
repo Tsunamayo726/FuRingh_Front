@@ -1,3 +1,169 @@
-* {
-  font-family: 'Roboto', sans-serif;
+/*default settings*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:"Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #e6e6e6;
+}
+/*hader*/
+header{
+    padding:15px 0 0 15px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    background-color:white;
+    border-bottom:2px solid #CC6600;
+}
+nav{
+    margin:0 0 0 auto;
+}
+.nav a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #4b4b4b; 
+}
+.nav a:hover{
+    border-bottom:3px solid #CC6600;
+}
+ul{
+    margin:0;
+    display: flex;
+}
+li{
+    margin:0 15px;
+    font-size:15px;
+}
+.logo{
+    border-style:none;
+}
+.logo img{
+    height:auto;
+    width: 100px;
+}
+/*footer*/
+.footer h1,h2,a{
+    color:white;
+}
+.footer {
+    margin-top:50px;
+    background-color: #35364e;
+    height: 150px;
+}
+
+.footer-left{
+    float: left;
+    margin: 25px auto;
+    width: 50%;
+    border-right: 2px solid #fff;
+}
+
+.footer-left h1{
+    margin: 20px auto;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-left h2{
+    margin: 0px auto 15px auto;
+    height: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+.footer-right{
+    display:inline-block;
+    text-align: center;
+    width: 50%;
+}
+.footer-right a:link,a:visited,a:hover,a:active{
+    text-decoration:none;
+    border:none;
+}
+.footer-system{
+    font-size: 15px;
+    margin: 40px auto 0 auto;    
+}
+.footer-system-top a{
+    padding-right:30px;
+}
+.footer-system-under{
+    margin-top:20px;
+}
+.footer-system-under a{
+    padding:0 30px 0 15px;
+}
+.footer-list{
+    margin:20px auto 0 auto;
+    font-size:12px;
+}
+.footer-list a{
+    padding-right: 25px;
+}
+.login-title{
+    padding-top:15px;
+    padding-bottom:25px;
+    font-size:25px;
+}
+/*ログインと新規登録*/
+.login-title p{
+    text-align:center;
+}
+.login-main{
+    background-color:white;
+    height:400px;
+    width:500px;
+    margin:100px auto;
+}
+.login-form{
+    text-align: center;
+    margin:0 auto;
+}
+.login-form input{
+    margin:20px auto;
+    height:35px;
+    width:400px;
+    border:solid 2px #A9A9A9;
+}
+.login-form p{
+    border-left:solid 5px #CC6600;
+    margin-left:50px;
+    text-align:left;
+  }
+.login-submit{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 13pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 5px 5px;     /* 余白       */
+    background    : #e88017;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.8;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    border:none;
+}
+.login-submit:hover {
+    opacity:1;           /* カーソル時透明度 */
+}
+.register a,.login a{
+    color:#0099FF;
+    text-decoration:none;
+    border:none;
+}
+.register a:hover,.login a:hover{
+    color:#0099FF;
+    border-bottom:solid 2px #0099FF;
 }
