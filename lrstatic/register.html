@@ -25,24 +25,24 @@
     <div class="login-form">
       <form>
         <p>メールアドレスを入力</p>
-        <input type="email" placeholder="メールアドレス"  name="username">
+        <input type="email" placeholder="メールアドレス"  name="username" required>
         <br>
-        <p>パスワードを入力(※入力必須)</p>
-        <input type="password" placeholder="パスワード" name="password"　required>
+        <p>パスワードを入力</p>
+        <input type="password" placeholder="パスワード" name="password" required>
         <br>
         <p>顧客ユーザーまたは食品事業者を選択</p>
         <div class="check">
           <label>
-            <input type="radio" name="check" class="check" value="shop">
+            <input type="radio" name="check" class="check" value="shop" required>
             食品事業者
           </label>
           <label>
-            <input type="radio" name="check" class="check" value="customer">
+            <input type="radio" name="check" class="check" value="customer" required>
             顧客ユーザー
           </label>
         </div>
           <p>ユーザ名または店名を入力</p>
-        <input type="text" placeholder="店名またはユーザ名を入力" name="shopname" id="name">
+        <input type="text" placeholder="店名またはユーザ名を入力" name="shopname" id="name" required>
         <br>
         <input type="submit" value="登録する" class="login-submit">
         <div class="login">
