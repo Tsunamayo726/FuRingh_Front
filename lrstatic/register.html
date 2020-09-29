@@ -27,22 +27,23 @@
     </div>
     <div class="login-form">
       <form>
-        <p>メールアドレスを入力</p>
-        <input type="text" placeholder="メールアドレス"  name="username">
+        <p>メールアドレスを入力(※入力必須)</p>
+        <input type="text" placeholder="メールアドレス"  name="username"　required>
         <br>
-        <p>パスワードを入力</p>
-        <input type="password" placeholder="パスワード" name="password">
+        <p>パスワードを入力(※入力必須)</p>
+        <input type="password" placeholder="パスワード" name="password"　required>
         <br>
+        <p>利用者がお店かお客さんかを選択(※入力必須)</p>
         <div class="check">
           <label>
-            <input type="radio" name="check" class="check" value="shop" onchange="connecttext('shopname',this.checked);">お店
+            <input type="radio" name="check" class="check" value="shop" onchange="connecttext('shopname',this.checked);" required>お店
           </label>
           <label>
-            <input type="radio" name="check" class="check" value="customer" onchange="connecttext('customername',this.checked);">お客さん  
+            <input type="radio" name="check" class="check" value="customer" onchange="connecttext('customername',this.checked);" required>お客さん  
           </label>
         </div>
-          <p>店名またはユーザ名を入力</p>
-        <input type="text" placeholder="店名またはユーザ名を入力" name="shopname" id="name">
+          <p>店名またはユーザ名を入力(※入力必須)</p>
+        <input type="text" placeholder="店名またはユーザ名を入力" name="shopname" id="name" required>
         <br>
         <input type="submit" value="登録する" class="login-submit">
         <div class="login">
