@@ -55,6 +55,38 @@ export default class TimeLine extends React.Component {
           price="DHFJKGH"
           quantity="DHFJKGH"
         />
+        <PostComponent
+          comment="DHFJKGH"
+          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"
+          username="DHFJKGH"
+          itemname="りんご"
+          price="DHFJKGH"
+          quantity="DHFJKGH"
+        />
+        <PostComponent
+          comment="DHFJKGH"
+          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"
+          username="DHFJKGH"
+          itemname="りんご"
+          price="DHFJKGH"
+          quantity="DHFJKGH"
+        />
+        <PostComponent
+          comment="DHFJKGH"
+          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"
+          username="DHFJKGH"
+          itemname="りんご"
+          price="DHFJKGH"
+          quantity="DHFJKGH"
+        />
+        <PostComponent
+          comment="DHFJKGH"
+          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"
+          username="DHFJKGH"
+          itemname="りんご"
+          price="DHFJKGH"
+          quantity="DHFJKGH"
+        />
       </div>
     );
   }

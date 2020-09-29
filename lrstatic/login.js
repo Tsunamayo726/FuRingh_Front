@@ -4,7 +4,6 @@ window.onload=()=>{
       username: e.target.username.value,
       password: e.target.password.value
     }
-    console.log(data)
     fetch('/api/v1/user/login', {
       method: "POST",
       mode: 'cors',
@@ -13,9 +12,9 @@ window.onload=()=>{
       },
       body: JSON.stringify(data)
     })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
+      .then(response => {
+        console.log("Successfly logined, redirecting ... ")
+        console.log(response)
         document.querySelector("div.status").innerText = "OK..."
         window.location.pathname = "/"
       });

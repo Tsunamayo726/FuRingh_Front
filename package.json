@@ -12,6 +12,7 @@
     "react-router-dom": "^5.2.0"
   },
   "scripts": {
+    "build-watch": "nodemon",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
