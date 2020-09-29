@@ -2,6 +2,7 @@ import React from "react";
 import icon from "../content/testicon.png"
 import "./PostComponent.css"
 import api from "../api/apiCon";
+import For from "react-loops";
 export default class PostComponent extends React.Component {
   constructor(props) {
     /*

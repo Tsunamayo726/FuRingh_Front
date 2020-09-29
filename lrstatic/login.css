@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+* {
+  font-family: 'Roboto', sans-serif;
+=======
 /*hader*/
 
 *{
@@ -10,7 +14,7 @@ body {
 }
 li{
   list-style: none;
-}
+} 
 
 body{
   background-color: #e6e6e6;
@@ -160,4 +164,5 @@ li{
 .register a:hover{
   color:#0099FF;
   border-bottom:solid 2px #0099FF;
+>>>>>>> Stashed changes
 }
