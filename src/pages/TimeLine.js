@@ -39,54 +39,13 @@ export default class TimeLine extends React.Component {
     // console.log(this.state.post_list);
     return (
       <div className="timeline">
-      {/*
-        <ul>
+      {
         <For of={this.state.post_list}>{item =>
         <PostComponent comment={item.text} username={item.name}  itemname={item.item_name}
-        price={item.item_price} quantity={item.item_quantity}/>
+        price={item.item_price} quantity={item.item_quantity} 
+        icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"/>
         }</For>
-        </ul>
-      */}
-        <PostComponent
-          comment="DHFJKGH"
-          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"
-          username="DHFJKGH"
-          itemname="りんご"
-          price="DHFJKGH"
-          quantity="DHFJKGH"
-        />
-        <PostComponent
-          comment="DHFJKGH"
-          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"
-          username="DHFJKGH"
-          itemname="りんご"
-          price="DHFJKGH"
-          quantity="DHFJKGH"
-        />
-        <PostComponent
-          comment="DHFJKGH"
-          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"
-          username="DHFJKGH"
-          itemname="りんご"
-          price="DHFJKGH"
-          quantity="DHFJKGH"
-        />
-        <PostComponent
-          comment="DHFJKGH"
-          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"
-          username="DHFJKGH"
-          itemname="りんご"
-          price="DHFJKGH"
-          quantity="DHFJKGH"
-        />
-        <PostComponent
-          comment="DHFJKGH"
-          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"
-          username="DHFJKGH"
-          itemname="りんご"
-          price="DHFJKGH"
-          quantity="DHFJKGH"
-        />
+      }
       </div>
     );
   }
