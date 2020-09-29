@@ -75,6 +75,18 @@ class apiCon {
             .catch(console.error);
         });
     }
+    
+    async get_my_post_list(user_id){
+        return new Promise((resolve,reject)=>{
+            const path = "/api/v1/post/get_my_post_list"
+            const query = "?user_id="+user_id;
+            fetch(this.URL + path + query)
+            .then(response=>response.json())
+            .then(data=>resolve(data))
+            .catch(console.error);
+        })
+    }
 }
 
 export default new apiCon("http://localhost:8000");
+
