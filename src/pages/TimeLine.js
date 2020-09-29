@@ -13,16 +13,12 @@ export default class TimeLine extends React.Component {
     }
   }
 
-
    componentDidMount(){
     api.get_timeline().then((result)=>{
       const post_list =  result.map(async (post) => {
-
         const user = await api.get_user_info(post.user_id);
         post.name = user[0].name;
-        
         return  result;
-
       });
 
       Promise.all(post_list).then(result=>{
@@ -31,7 +27,6 @@ export default class TimeLine extends React.Component {
           post_list:result[0],
         });
       })
-
     });
   }
 
@@ -41,9 +36,9 @@ export default class TimeLine extends React.Component {
       <div className="timeline">
       {
         <For of={this.state.post_list}>{item =>
-        <PostComponent comment={item.text} username={item.name}  itemname={item.item_name}
-        price={item.item_price} quantity={item.item_quantity}  post_id={item.id}
-        icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"/>
+          <PostComponent comment={item.text} username={item.name}  itemname={item.item_name}
+          price={item.item_price} quantity={item.item_quantity}  post_id={item.id}
+          icon="https://3.bp.blogspot.com/-FzWTZpvCJbI/UnyGDzk-a_I/AAAAAAAAaaA/egx-ovF1ke0/s800/cut_vegetable_cabbage.png"/>
         }</For>
       }
       </div>

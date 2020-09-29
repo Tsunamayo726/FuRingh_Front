@@ -1,8 +1,8 @@
 import React from "react";
-import icon from "../content/testicon.png"
 import "./PostComponent.css"
 import api from "../api/apiCon";
 import For from "react-loops";
+
 export default class PostComponent extends React.Component {
   constructor(props) {
     /*
@@ -28,6 +28,15 @@ export default class PostComponent extends React.Component {
       replyStatus: "",
       post_id:props.post_id,
     }
+  }
+
+  replyComponent(props){
+    return (
+      <div className="reply">
+        <div className="username">@{props.username}</div>
+        <div className="commenttext">{props.comment}</div>
+      </div>
+    )
   }
 
   render() {
@@ -105,6 +114,14 @@ export default class PostComponent extends React.Component {
                 }}/>
             </form>
             <div className="replyStatus">{this.state.replyStatus}</div>
+          </div>
+          <div className="replyList">
+
+            <this.replyComponent
+              username="tmcitproken"
+              comment="COMMENT"
+            />
+
           </div>
         </div>
       </div>

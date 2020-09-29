@@ -38,6 +38,7 @@
   justify-content: center;
   height: 2rem;
   width: 7rem;
+  transition: .3s;
   display: flex;
   border-radius: 1rem;
   background-color: rgb(240, 240, 240);
@@ -45,11 +46,13 @@
 
 .PostComponent .replybutton.mouseover {
   background-color: rgb(222, 222, 222);
+  transition: .3s;
 }
 
 .PostComponent .replybutton.mousedown {
   background-color: gray;
   color: white;
+  transition: 0s;
 }
 
 .PostComponent .replyBox {
@@ -58,4 +61,17 @@
 
 .PostComponent .replyBox.show {
   display: inline;
+}
+
+.PostComponent .replyList {
+  padding: 10px 0 0 10px;
+}
+
+.PostComponent .reply div {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.PostComponent .reply .username {
+  color: gray;
 }
