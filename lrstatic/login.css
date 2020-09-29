@@ -1,4 +1,21 @@
 /*hader*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:"Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+li{
+  list-style: none;
+}
+
+body{
+  background-color: #e6e6e6;
+}
+
 header{
   padding:15px 0 0 15px;
   position: fixed;
