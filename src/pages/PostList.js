@@ -7,7 +7,7 @@ import "./TimeLine.css"
 export default class TimeLine extends React.Component {
   constructor(props) {
     super(props)
-    console.log("Timeline")
+    console.log("PostList")
     this.state = {
       post_list:null,
     }
@@ -15,7 +15,7 @@ export default class TimeLine extends React.Component {
 
 
    componentDidMount(){
-    api.get_timeline().then((result)=>{
+    api.get_my_post_list(1).then((result)=>{
       const post_list =  result.map(async (post) => {
 
         const user = await api.get_user_info(post.user_id);
