@@ -11,8 +11,22 @@ export default class Layout extends React.Component {
     fetch("/api/v1/user/getmyinfo")
     .then(response => response.json())
     .then(json => {
-      console.log(json.name)
-      this.setState({username: json.name})
+      console.log(json)
+      this.setState({
+        shop_or_customer: json.shop_or_customer,
+        username: json.name,
+        timelineName: "タイムライン"
+      })
+      if (json.shop_or_customer === "shop") {
+        this.setState({
+          postComp: (
+            <li>
+              <Link to="/Post">投稿</Link>
+            </li>
+          ),
+          timelineName: "投稿一覧"
+        })
+      }
     })
   }
   render() {
@@ -26,21 +40,20 @@ export default class Layout extends React.Component {
         <nav class="header-list">
           <ul class="nav">
             <li>
-              <Link to="/">タイムライン</Link>
+              <Link to="/">{this.state.timelineName}</Link>
             </li>
+            {this.state.postComp}
             <li>
               <a href="profile.html">@{this.state.username}</a>
             </li>
             <li>
-              <a
-                onClick={()=>{
+              <a href="/#" onClick={()=>{
                   fetch("/api/v1/user/logout").then((response)=>{
                     console.log("Logout")
                     window.location.pathname = "/login"
                   })
                   return false
-                }}
-                href="#">ログアウト</a>
+                }}>ログアウト</a>
             </li>
           </ul>
         </nav>
