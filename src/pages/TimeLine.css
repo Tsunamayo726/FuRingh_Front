@@ -1,8 +1,9 @@
 .timeline {
   /* text-align: center; */
-  padding-left: 100px;
+  padding-left: 200px;
 }
 
 .timeline PostComponent {
   text-align: center;
+  margin-bottom: 50px;
 }

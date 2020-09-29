@@ -1,9 +1,54 @@
-.Header  {
-  font-size: 2rem;
-  display: flex;
-  margin: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.Header .right {
-  margin-right: 0;
+li {
+  list-style: none;
+}
+
+.Header {
+  padding: 15px 0 0 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 2px solid #CC6600;
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+
+.nav a, Link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+.nav a:hover, Link:hover {
+  border-bottom: 3px solid #CC6600;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 15px;
+  font-size: 15px;
+}
+
+.logo {
+  border-style: none;
+}
+
+.logo img {
+  height: auto;
+  width: 100px;
 }
