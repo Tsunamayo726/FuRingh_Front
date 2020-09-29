@@ -9,11 +9,16 @@ export default class MainComponent extends React.Component {
       .then(response => response.json())
       .then(json => {
         console.log(json)
-        // this.setState({username: json})
+        this.setState({shop_or_customer: json.shop_or_customer})
+        if (json.shop_or_customer === "shop") {
+          window.location.hash = "#PostList"
+        } else {
+          window.location.hash = "#TimeLine"
+        }
       })
   }
 
   render() {
-    return <div></div>
+    return (<div>Please wait ...</div>)
   }
 }

@@ -7,8 +7,8 @@ import ShopList from "./pages/ShopList";
 import LoginRegister from "./pages/LoginRegister"
 import Post from "./pages/Post"
 import MainComponent from "./pages/MainComponent"
-import TimeLine from "./TimeLine";
-import PostList from "./PostList"
+import TimeLine from "./pages/TimeLine";
+import PostList from "./pages/PostList"
 
 export default class App extends React.Component {
   render() {
@@ -25,6 +25,6 @@ export default class App extends React.Component {
           <Route path="/Register" component={() => <LoginRegister feature="register" />}></Route>
         </Layout>
       </Router>
-    );
+    )
   }
 }
