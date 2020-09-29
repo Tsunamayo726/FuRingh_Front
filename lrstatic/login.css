@@ -126,6 +126,12 @@ li{
     width:500px;
     margin:100px auto;
 }
+.register-main{
+    background-color:white;
+    height:650px;
+    width:500px;
+    margin:100px auto;
+}
 .login-form{
     text-align: center;
     margin:0 auto;
@@ -137,10 +143,11 @@ li{
     border:solid 2px #A9A9A9;
 }
 .login-form p{
+    padding-left:5px;
     border-left:solid 5px #CC6600;
     margin-left:50px;
     text-align:left;
-  }
+}
 .login-submit{
     display       : inline-block;
     border-radius : 5%;          /* 角丸       */
@@ -166,4 +173,12 @@ li{
 .register a:hover,.login a:hover{
     color:#0099FF;
     border-bottom:solid 2px #0099FF;
+}
+.check{
+    margin-left:50px;
+    text-align: left;
+}
+.check input{
+    width:20px;
+    height:20px;
 }
