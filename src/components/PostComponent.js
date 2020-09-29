@@ -1,7 +1,7 @@
 import React from "react";
 import icon from "../content/testicon.png"
 import "./PostComponent.css"
-
+import api from "../api/apiCon";
 export default class PostComponent extends React.Component {
   constructor(props) {
     /*
@@ -92,23 +92,8 @@ export default class PostComponent extends React.Component {
                   comment: e.target.comment.value
                 }
                 // "/api/v1/post/reply"
-                fetch("/api/v1/post/reply", {
-                  method: "POST",
-                  mode: 'cors',
-                  headers: {
-                    'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify(data)
-                }).then(response => response.json())
-                .then(data => {
-                  console.log(data)
-                  this.setState({
-                    replyStatus: "Successfly reply sent."
-                  })
-                })
-                .catch(console.error)
-                return false
-              }}>
+                api.reply(userid,postid,e.target.comment.value);
+            }}>
               <input type="text" name="comment" placeholder="Comment hr"/>
               <input type="submit" value="Comment"/>
               <input type="button" value="X" onClick={() => {
