@@ -24,7 +24,8 @@ export default class PostComponent extends React.Component {
       price: props.price,
       comment: props.comment,
       replyBoxClassName: "replyBox",
-      replyStatus: ""
+      replyStatus: "",
+      post_id:props.post_id,
     }
   }
 
