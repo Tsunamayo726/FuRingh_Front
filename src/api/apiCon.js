@@ -49,7 +49,9 @@ class apiCon {
         const obj = {
             "user_id":user_id,
             "post_id":post_id,
-            "comment":comment,
+            data: {
+                "comment":comment,
+            }
         };
         const method = "POST";
         const headers = {
