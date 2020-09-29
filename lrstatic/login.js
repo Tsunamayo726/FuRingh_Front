@@ -1,5 +1,5 @@
 window.onload=()=>{
-  document.querySelector("div.form > form").onsubmit = (e) => {
+  document.querySelector("div.login-form > form").onsubmit = (e) => {
     const data = {
       username: e.target.username.value,
       password: e.target.password.value

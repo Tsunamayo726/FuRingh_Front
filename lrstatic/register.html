@@ -14,10 +14,7 @@
     <a href="/" class="logo"><img src="logo.png" href="/" alt="logo"></a>
     <nav class="header-list">
         <ul class="nav">
-            <li><a href="#">タイムライン</a></li>
-            <li><a href="#">お店一覧</a></li>
-            <li><a href="profile.html">@UserName</a></li>
-            <li><a href="#">ログアウト</a></li>
+            <li><a href=".">ログイン</a></li>
         </ul>
     </nav>
   </header>
@@ -28,20 +25,23 @@
     <div class="login-form">
       <form>
         <p>メールアドレスを入力</p>
-        <input type="text" placeholder="メールアドレス"  name="username">
+        <input type="email" placeholder="メールアドレス"  name="username">
         <br>
         <p>パスワードを入力</p>
         <input type="password" placeholder="パスワード" name="password">
         <br>
+        <p>顧客ユーザーまたは食品事業者を選択</p>
         <div class="check">
           <label>
-            <input type="radio" name="check" class="check" value="shop" onchange="connecttext('shopname',this.checked);">お店
+            <input type="radio" name="check" class="check" value="shop">
+            食品事業者
           </label>
           <label>
-            <input type="radio" name="check" class="check" value="customer" onchange="connecttext('customername',this.checked);">お客さん  
+            <input type="radio" name="check" class="check" value="customer">
+            顧客ユーザー
           </label>
         </div>
-          <p>店名またはユーザ名を入力</p>
+          <p>ユーザ名または店名を入力</p>
         <input type="text" placeholder="店名またはユーザ名を入力" name="shopname" id="name">
         <br>
         <input type="submit" value="登録する" class="login-submit">
@@ -62,11 +62,11 @@
             <div class="footer-system">
                 <div class="footer-system-top">
                     <a href="#">タイムライン</a>
-                    <a href="#">お店一覧</a><br>	
+                    <a href="#">お店一覧</a><br>
                 </div>
                 <div class="footer-system-under">
                     <a href="#">ログイン</a>
-                    <a href="#">新規登録</a>	
+                    <a href="#">新規登録</a>
                 </div>
             </div>
             <div class="footer-list">
