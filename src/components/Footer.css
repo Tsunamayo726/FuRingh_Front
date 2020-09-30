@@ -1,0 +1,67 @@
+.footer h1, h2, a {
+  color: white;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #35364e;
+  height: 150px;
+}
+
+.footer-left {
+  float: left;
+  margin: 25px auto;
+  width: 50%;
+  border-right: 2px solid #fff;
+}
+
+.footer-left h1 {
+  margin: 20px auto;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.footer-left h2 {
+  margin: 0px auto 15px auto;
+  height: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.footer-right {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+.footer-right a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  border: none;
+}
+
+.footer-system {
+  font-size: 15px;
+  margin: 40px auto 0 auto;
+}
+
+.footer-system-top a {
+  padding-right: 30px;
+}
+
+.footer-system-under {
+  margin-top: 20px;
+}
+
+.footer-system-under a {
+  padding: 0 30px 0 15px;
+}
+
+.footer-list {
+  margin: 20px auto 0 auto;
+  font-size: 12px;
+}
+
+.footer-list a {
+  padding-right: 25px;
+}

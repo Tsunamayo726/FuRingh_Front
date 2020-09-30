@@ -41,7 +41,7 @@ export default class TimeLine extends React.Component {
       <div className="timeline">
         <For of={this.state.post_list}>{item =>
         <PostComponent comment={item.text} username={item.name}  itemname={item.item_name}
-        price={item.item_price} quantity={item.item_quantity} 
+        price={item.item_price} quantity={item.item_quantity}
         icon="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
         />
         }</For>
