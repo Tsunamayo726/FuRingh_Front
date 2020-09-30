@@ -24,6 +24,7 @@ export default class Layout extends React.Component {
               <Link to="/Post">投稿</Link>
             </li>
           ),
+          username: json.shop_name,
           timelineName: "投稿一覧"
         })
       }
