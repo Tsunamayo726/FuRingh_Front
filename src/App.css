@@ -1,3 +1,19 @@
 body {
   padding-top: 100px;
+  min-height: 100vh;
+}
+
+div#root, div#root>div {
+  margin-bottom: 0;
+  min-height: calc(100vh - 100px);
+}
+
+div#root>div {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+div.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
